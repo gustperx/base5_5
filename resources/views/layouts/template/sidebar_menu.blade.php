@@ -11,13 +11,13 @@
 
     <li class="sidebar-label pt20">Systems</li>
     <li>
-        <a class="accordion-toggle menu-open" href="#">
+        <a class="accordion-toggle" href="#">
             <span class="fa fa-gears"></span>
             <span class="sidebar-title">Admin</span>
             <span class="caret"></span>
         </a>
         <ul class="nav sub-nav">
-            <li class="active">
+            <li>
                 <a href="{{ route('user.index') }}">
                     <span class="fa fa-users"></span> Users</a>
             </li>

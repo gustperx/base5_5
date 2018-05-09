@@ -20,6 +20,12 @@
         <!-- Admin Forms CSS -->
         <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-tools/admin-forms/css/admin-forms.css') }}">
 
+        <!-- Datatables CSS -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('vendor/plugins/datatables/media/css/dataTables.bootstrap.css') }}">
+
+        <!-- Datatables Addons CSS -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('vendor/plugins/datatables/media/css/dataTables.plugins.css') }}">
+
         <!-- Favicon -->
         <link rel="shortcut icon" href="{{ asset('assets/img/favicon.ico') }}">
 
@@ -75,7 +81,26 @@
     <script src="{{ asset('assets/js/utility/utility.js') }}"></script>
 
     <script src="{{ asset('assets/js/main.js') }}"></script>
+
+    <!-- Datatables Tabletools addon -->
+    <script src="{{ asset('vendor/plugins/datatables/media/js/jquery.dataTables.js') }}"></script>
+    <!-- Datatables Bootstrap Modifications  -->
+    <script src="{{ asset('vendor/plugins/datatables/media/js/dataTables.bootstrap.js') }}"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+
+    <script>
+        // Init DataTables
+        $('#data-table').dataTable({
+            responsive: true,
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json"
+            }
+        });
+    </script>
+
     @yield('js')
+
     <script type="text/javascript">
         jQuery(document).ready(function() {
             "use strict";

@@ -9,7 +9,7 @@
         <a href="{{ route('user.index') }}">Users</a>
     </li>
 
-    <li class="crumb-trail">Create</li>
+    <li class="crumb-trail">Edit User</li>
 @stop
 
 @section('content')
@@ -33,7 +33,7 @@
                         <span>Create User</span>
                     </div>
 
-                    {!! Form::open(['route' => 'user.store', 'method' => 'POST']) !!}
+                    {!! Form::model($user ,['route' => ['user.update', $user], 'method' => 'PUT']) !!}
 
                         <div class="row">
                             <div class="col-md-6">
@@ -44,17 +44,8 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                {!! Field::password('password', ['placeholder' => 'Password'], ['icon' => 'fa fa-lock']) !!}
-                            </div>
-                            <div class="col-md-6">
-                                {!! Field::password('password_confirmation', ['placeholder' => 'Confirm Password'], ['icon' => 'fa fa-lock']) !!}
-                            </div>
-                        </div>
-
                         <div class="panel-footer">
-                            <button type="submit" class="button btn-primary">Save</button>
+                            <button type="submit" class="button btn-primary">Update</button>
                         </div>
 
                     {!! Form::close() !!}
