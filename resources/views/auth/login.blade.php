@@ -17,7 +17,7 @@
                     <!-- Username Input -->
 
                     <div class="section">
-                        {!! Field::email('email', null, ['placeholder' => 'Username'], ['icon' => 'fa fa-user']) !!}
+                        {!! Field::email('email', null, ['placeholder' => 'Email'], ['icon' => 'fa fa-user']) !!}
                     </div>
 
                     <!-- Password Input -->

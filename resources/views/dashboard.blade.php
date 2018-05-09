@@ -2,12 +2,14 @@
 
 @section('top_bar')
     <li class="crumb-active">
-        <a href="dashboard.html">Dashboard</a>
+        <a href="{{ route('dashboard') }}">Dashboard</a>
     </li>
+    {{--
     <li class="crumb-link">
-        <a href="dashboard.html">Home</a>
+        <a href="{{ route('dashboard') }}">Home</a>
     </li>
     <li class="crumb-trail">Dashboard</li>
+    --}}
 @stop
 
 @section('content')

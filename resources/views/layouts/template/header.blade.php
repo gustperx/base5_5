@@ -2,7 +2,7 @@
 <header class="navbar navbar-fixed-top navbar-shadow bg-dark">
 
     <div class="navbar-branding">
-        <a class="navbar-brand" href="dashboard.html">
+        <a class="navbar-brand" href="{{ route('dashboard') }}">
             <b>Admin</b>Designs
         </a>
         <span id="toggle_sidemenu_l" class="ad ad-lines"></span>
@@ -11,7 +11,7 @@
     <ul class="nav navbar-nav navbar-right">
 
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle fw600 p15" data-toggle="dropdown"> <img src="assets/img/avatars/1.jpg" alt="avatar" class="mw30 br64 mr15"> John.Smith
+            <a href="#" class="dropdown-toggle fw600 p15" data-toggle="dropdown"> <img src="{{ asset('assets/img/avatars/1.jpg') }}" alt="avatar" class="mw30 br64 mr15"> John.Smith
                 <span class="caret caret-tp hidden-xs"></span>
             </a>
             <ul class="dropdown-menu list-group dropdown-persist w250" role="menu">
